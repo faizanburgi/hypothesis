@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#03070e" />
+  <meta name="description" content="An open notebook for the curious — small essays on people, patterns, and the worlds we make." />
+  <title>Elsewhere — notes for the curious</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="wordmark" href="#top" aria-label="Elsewhere home"><span class="mark">e.</span><span>elsewhere</span></a>
+      <nav class="top-links" aria-label="Main navigation"><a href="#fieldnotes">Field notes</a><a href="#about">About</a><a class="submit-link" href="mailto:hello@elsewhere.example?subject=A%20note%20for%20Elsewhere">Send a thought <span>↗</span></a></nav>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-stars" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot"></span> AN OPEN NOTEBOOK FOR THE CURIOUS</div>
+          <h1 id="hero-title">Look closer.<br><em>The world looks back.</em></h1>
+          <p class="hero-intro">An atlas of strange facts, inner worlds, and the small rituals that make us human.</p>
+          <div class="hero-actions"><a class="button button-dark" href="#fieldnotes">Enter the archive <span>↓</span></a><button class="button button-quiet" id="surpriseTop"><span class="sparkle">✳</span> Open a random thought</button></div>
+          <div class="hero-foot"><span>OBSERVATION NO. 001</span><span>THE HUMAN UNIVERSE, IN FOCUS</span></div>
+        </div>
+        <div class="hero-art" aria-label="Animated blue iris with orbital scientific markings">
+          <div class="nebula nebula-a"></div><div class="nebula nebula-b"></div>
+          <div class="iris-halo"></div><div class="iris-orbit orbit-one"></div><div class="iris-orbit orbit-two"></div>
+          <div class="iris-shell"><div class="iris-core"><div class="iris-fibers"></div><div class="iris-pupil"></div><div class="iris-glint"></div></div><div class="iris-ring ring-inner"></div><div class="iris-ring ring-outer"></div><div class="iris-ticks"></div></div>
+          <div class="scan-line"></div>
+          <div class="specimen-card outcome-card"><span class="specimen-label">A FIELD GUIDE TO</span><strong>Being<br>human</strong><span class="specimen-rule"></span><span class="specimen-detail">PATTERNS · PARADOXES · PEOPLE</span></div>
+          <div class="specimen-card signal-card"><span class="specimen-label">SIGNAL DETECTED</span><strong>Curiosity</strong><span class="signal-wave">∿ ∿ ∿</span></div>
+          <div class="lens-label label-top">THE INNER<br>UNIVERSE <i>✳</i></div><div class="lens-label label-side">OBSERVE · QUESTION · WONDER</div>
+          <span class="hero-coordinate coord-one">04° 38′ N<br>101° 42′ E</span><span class="hero-coordinate coord-two">FIG. 001 — HUMAN NATURE</span>
+        </div>
+        <div class="hero-index"><span>01</span><span class="index-line"></span><span>05</span></div>
+        <a href="#fieldnotes" class="scroll-cue"><span></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="ticker" aria-label="Explore topics"><div class="ticker-track"><span>HUMAN NATURE</span><i>✳</i><span>SMALL RITUALS</span><i>✳</i><span>BIG QUESTIONS</span><i>✳</i><span>ODD FACTS</span><i>✳</i><span>HUMAN NATURE</span><i>✳</i><span>SMALL RITUALS</span><i>✳</i><span>BIG QUESTIONS</span><i>✳</i><span>ODD FACTS</span><i>✳</i></div></section>
+
+      <section class="feed-section" id="fieldnotes">
+        <div class="section-heading"><div><div class="eyebrow section-kicker">THE COMMONPLACE BOOK <span>·</span> VOL. 01</div><h2>Things worth<br><em>turning over.</em></h2></div><p>A cabinet of curiosities, collected one question at a time. Take what you like; leave with something to think about.</p></div>
+        <div class="feed-tools"><div class="filters" role="group" aria-label="Filter notes by topic"><button class="filter-chip active" data-filter="All">Everything <span>06</span></button><button class="filter-chip" data-filter="Psychology">Psychology</button><button class="filter-chip" data-filter="Philosophy">Philosophy</button><button class="filter-chip" data-filter="Rituals">Rituals</button><button class="filter-chip" data-filter="Curiosities">Curiosities</button></div><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Find a thought…" aria-label="Search notes"><kbd>⌘ K</kbd></label></div>
+        <div class="results-line"><span id="resultCount">06 NOTES TO WANDER THROUGH</span><button id="clearSearch" class="clear-search" hidden>Clear search ×</button></div>
+        <div class="card-grid" id="cardGrid" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden><span>◌</span><h3>No notes in this corner.</h3><p>Try another word or topic and keep wandering.</p><button class="button button-dark" id="resetFilters">See everything</button></div>
+        <div class="feed-end"><span class="end-star">✳</span><p>THE WORLD IS STRANGER<br>THAN WE GIVE IT CREDIT FOR.</p><span class="end-star">✳</span></div>
+      </section>
+
+      <section class="about-band" id="about"><div class="about-mark">e.</div><div><div class="eyebrow">A NOTE FROM THE EDITOR</div><h2>Curiosity is a<br><em>way of being.</em></h2></div><p>Elsewhere is a growing collection of human-sized ideas: carefully sourced, lightly held, and always open to another point of view. Nothing here is the last word. That’s the point.</p><a href="mailto:hello@elsewhere.example?subject=Hello%20Elsewhere" class="about-arrow" aria-label="Write to Elsewhere">↗</a></section>
+    </main>
+    <footer class="footer"><a class="wordmark" href="#top"><span class="mark">e.</span><span>elsewhere</span></a><span>AN OPEN NOTEBOOK FOR THE CURIOUS</span><span>© 2025 · MADE SLOWLY</span></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
