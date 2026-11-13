@@ -57,6 +57,12 @@
     </main>
     <footer class="footer"><a class="wordmark" href="#top"><span class="mark">e.</span><span>elsewhere</span></a><span>AN OPEN NOTEBOOK FOR THE CURIOUS</span><a class="maker-credit" href="https://devwrangle.com" target="_blank" rel="noopener noreferrer">MADE BY DEVWRANGLE ↗</a></footer>
   </div>
+  <div class="reader-overlay" id="readerOverlay" hidden>
+    <section class="reader-panel" id="readerPanel" role="dialog" aria-modal="true" aria-labelledby="readerTitle" tabindex="-1">
+      <header class="reader-topbar"><button class="reader-back" id="readerBack" type="button">← Back to notes</button><span class="reader-brand">ELSEWHERE · FIELD NOTE</span><button class="reader-close" id="readerClose" type="button" aria-label="Close article">×</button></header>
+      <article class="reader-content" id="readerContent"></article>
+    </section>
+  </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="script.js"></script>
 </body>
